@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     margin: 0;
@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
 }
 
-.video-container {
+.landing-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -26,20 +26,24 @@ body{
 
 .overlay-text {
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
     color: white;
     z-index: 1;
 }
 
+#notify-btn{
+    margin-top: 35em;
+}
+
 /* font */
-.bungee-spice-regular {
+.ft-bungee-spice-regular {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-size: 150px;
     font-style: normal;
 }
 
-.montserrat-main {
+.ft-montserrat-main {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -48,9 +52,36 @@ body{
     font-style: normal;
 }
 
-.montserrat-sub {
+.ft-montserrat-sub {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
+
+.ft-great-vibes {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* media queries */
+@media (max-width: 768px) {
+    .ft-bungee-spice-regular {
+        font-size: 120px; /* (4/5 size) */
+    }
+    .ft-montserrat-main{
+        font-size: 80px; /* (4/5 size) */
+    }
+}
+
+@media (max-width: 576px) {
+    .ft-bungee-spice-regular {
+        font-size: 90px; /* (3/5 size) */
+    }
+    .ft-montserrat-main{
+        font-size: 60px; /* (3/5 size) */
+    }
+}
+
+/* above 768px will be full sizes */
