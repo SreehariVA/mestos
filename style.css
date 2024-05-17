@@ -7,13 +7,27 @@
     font-family: 'BungeeSpice';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets/BungeeSpice-Regular.ttf') format('truetype');
+    src: url('./assets/BungeeSpice-Regular.woff2') format('woff2'),
+    url('./assets/BungeeSpice-Regular.woff') format('woff'),
+    url('./assets/BungeeSpice-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Montserrat-Regular';
     font-style: normal;
     font-weight: 600;
-    src: url('./assets/Montserrat-SemiBold.ttf') format('truetype');
+    src:
+    /* url('./assets/Montserrat-SemiBold.woff2') format('woff2'),
+    url('./assets/Montserrat-SemiBold.woff') format('woff'), */
+    url('./assets/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 900;
+    src: 
+    /* url('./assets/Montserrat-Black.woff2') format('woff2'),
+    url('./assets/Montserrat-Black.woff') format('woff'), */
+    url('./assets/Montserrat-Black.ttf') format('truetype');
 }
 @font-face {
     font-family: 'GreatVibes';
@@ -54,7 +68,12 @@ body{
 }
 
 #notify-btn{
-    margin-top: 35em;
+    margin-top: 50em;
+}
+
+#whatsapp-btn{
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-decoration: none;
 }
 
 /* font (use font-face at head)*/
@@ -65,16 +84,18 @@ body{
 }
 
 .ft-montserrat-main {
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
     font-size: 100px;
     font-optical-sizing: auto;
     letter-spacing: 5px;
+    color: black;
 }
 
 .ft-montserrat-sub {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 24px;
     font-optical-sizing: auto;
+    color: coral;
 }
 
 /* .ft-great-vibes {
@@ -82,22 +103,53 @@ body{
 } */
 
 /* media queries */
+
+/* above 768px will be full sizes */
+
 @media (max-width: 768px) {
     .ft-bungee-spice-regular {
-        font-size: 120px; /* (4/5 size) */
+        font-size: 120px; /* (4x30 size) */
     }
     .ft-montserrat-main{
-        font-size: 80px; /* (4/5 size) */
+        font-size: 80px; /* (4x20 size) */
+    }
+    .ft-montserrat-sub{
+        font-size: 24px; /* (4x6 size) */
     }
 }
 
 @media (max-width: 576px) {
     .ft-bungee-spice-regular {
-        font-size: 90px; /* (3/5 size) */
+        font-size: 90px; /* (3x30 size) */
     }
     .ft-montserrat-main{
-        font-size: 60px; /* (3/5 size) */
+        font-size: 60px; /* (3x20 size) */
+    }
+    .ft-montserrat-sub{
+        font-size: 18px; /* (3x6 size) */
     }
 }
 
-/* above 768px will be full sizes */
+@media (max-width: 430px) {
+    .ft-bungee-spice-regular {
+        font-size: 75px; /* (2.5x30 size) */
+    }
+    .ft-montserrat-main{
+        font-size: 50px; /* (2.5x20 size) */
+    }
+    .ft-montserrat-sub{
+        font-size: 15px; /* (2.5x6 size) */
+    }
+}
+
+@media (max-width: 375px) {
+    .ft-bungee-spice-regular {
+        font-size: 60px; /* (2x30 size) */
+    }
+    .ft-montserrat-main{
+        font-size: 40px; /* (2x20 size) */
+    }
+    .ft-montserrat-sub{
+        font-size: 12px; /* (2x6 size) */
+    }
+}
