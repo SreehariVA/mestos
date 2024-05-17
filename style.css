@@ -3,6 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); */
 
+@font-face {
+    font-family: 'BungeeSpice';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/BungeeSpice-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GreatVibes';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/GreatVibes-Regular.ttf') format('truetype');
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -38,35 +57,29 @@ body{
     margin-top: 35em;
 }
 
-/* font */
+/* font (use font-face at head)*/
 .ft-bungee-spice-regular {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
+    font-family: 'BungeeSpice', sans-serif;
     font-size: 150px;
-    font-style: normal;
+    font-optical-sizing: auto;
 }
 
 .ft-montserrat-main {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 100px;
+    font-optical-sizing: auto;
     letter-spacing: 5px;
-    font-style: normal;
 }
 
 .ft-montserrat-sub {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 24px;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
 }
 
-.ft-great-vibes {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+/* .ft-great-vibes {
+    font-family: "GreatVibes", cursive;
+} */
 
 /* media queries */
 @media (max-width: 768px) {
