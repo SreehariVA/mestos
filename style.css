@@ -47,11 +47,15 @@ body{
 .landing-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+#mestos-logo{
+    margin-bottom: -0.2em;
 }
 
 .video {
@@ -67,25 +71,25 @@ body{
     z-index: 1;
 }
 
-#notify-btn{
+/* #notify-btn{
     margin-top: 50em;
-}
+} */
 
-#whatsapp-btn{
+.end-btns{
     font-family: 'Montserrat-Regular', sans-serif;
-    text-decoration: none;
+    font-size: 12px;
 }
 
 /* font (use font-face at head)*/
 .ft-bungee-spice-regular {
     font-family: 'BungeeSpice', sans-serif;
-    font-size: 150px;
+    font-size: 135px;
     font-optical-sizing: auto;
 }
 
 .ft-montserrat-main {
     font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 100px;
+    font-size: 90px;
     font-optical-sizing: auto;
     letter-spacing: 5px;
     color: black;
@@ -93,14 +97,15 @@ body{
 
 .ft-montserrat-sub {
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 24px;
+    font-size: 27px;
     font-optical-sizing: auto;
     color: coral;
 }
 
-/* .ft-great-vibes {
+.ft-great-vibes {
     font-family: "GreatVibes", cursive;
-} */
+    color: black;
+}
 
 /* media queries */
 
@@ -116,9 +121,27 @@ body{
     .ft-montserrat-sub{
         font-size: 24px; /* (4x6 size) */
     }
+    .about-h3{
+        font-size: 24px; /* (4x6 size) */
+    }
 }
 
 @media (max-width: 576px) {
+    .ft-bungee-spice-regular {
+        font-size: 105px; /* (3.5x30 size) */
+    }
+    .ft-montserrat-main{
+        font-size: 70px; /* (3.5x20 size) */
+    }
+    .ft-montserrat-sub{
+        font-size: 21px; /* (3.5x6 size) */
+    }
+    .about-h3{
+        font-size: 21px; /* (3.5x6 size) */
+    }
+}
+
+@media (max-width: 440px) {
     .ft-bungee-spice-regular {
         font-size: 90px; /* (3x30 size) */
     }
@@ -128,16 +151,22 @@ body{
     .ft-montserrat-sub{
         font-size: 18px; /* (3x6 size) */
     }
+    .about-h3{
+        font-size: 18px; /* (3x6 size) */
+    }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 400px) {
     .ft-bungee-spice-regular {
-        font-size: 75px; /* (2.5x30 size) */
+        font-size: 70px; /* (2.5x30 size) */
     }
     .ft-montserrat-main{
         font-size: 50px; /* (2.5x20 size) */
     }
     .ft-montserrat-sub{
+        font-size: 15x; /* (2.5x6 size) */
+    }
+    .about-h3{
         font-size: 15px; /* (2.5x6 size) */
     }
 }
@@ -150,6 +179,9 @@ body{
         font-size: 40px; /* (2x20 size) */
     }
     .ft-montserrat-sub{
+        font-size: 12px; /* (2x6 size) */
+    }
+    .about-h3{
         font-size: 12px; /* (2x6 size) */
     }
 }
